@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Q2SW2</title>
+
+		<!-- SETUP BOOTSTAP: link to Bootstrap -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+		<!-- link to JS -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+		<!-- Add style -->
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+	</head>
+
+<body>
+	<div class="container2">
+		<div class="alert alert-success alert-dismissible fade show">
+			<button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+			<strong> Directions: </strong> Fill up the form below.
+		</div>
+	</div>
+
+	<div class="container mb-3">
+		<h2> Robotics Club Registration Form </h2>
+		<form>
+    		<div class="row mb-3">
+        		<div class="col-12 col-md-6">
+            		<label for="inputName">Name</label>
+            		<input type="text" class="form-control" id="inputName" placeholder="Name" required>
+            	</div>
+            	<div class="col-12 col-md-6">
+            		<label for="inputAge">Age</label>
+            		<input type="number" class="form-control" id="inputAge" placeholder="Age" required min="1" max="100">
+            	</div>
+            </div>
+            <div class="row mb-3">
+            	<div class="col-12 col-md-6">
+            		<label for="inputEmail">Email</label>
+            		<input type="email" class="form-control" id="inputEmail" placeholder="example@gmail.com" required>
+            	</div>
+            	<div class="col-12 col-md-6">
+            		<label for="inputTel">Phone Number</label>
+            		<input type="tel" class="form-control" id="inputTel" placeholder="(+63)-XXX-XXX-XXXX" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+            	</div>
+            </div>
+        </form>
+
+        <div class="row">
+        	<div class="container3a col-12 col-md-6">
+        		<div class="topics">
+        			<strong><p>Preferred Robotics Topics</p></strong>
+        			<form>
+        				<div class="programming mb-3">
+        					<div>
+        						<input type="checkbox" id="checkProgram">
+        						<label for="checkProgram">Programming</label>
+        					</div>
+        				</div>
+        				<div class="electronics mb-3">
+        					<div>
+        						<input type="checkbox" id="checkElec">
+        						<label for="checkElec">Electronics</label>
+        					</div>
+        				</div>
+        				<div class="mechdesign mb-3">
+        					<div>
+        						<input type="checkbox" id="checkMech">
+        						<label for="checkMech">Mechanical Design</label>
+        					</div>
+        				</div>
+        			</form>
+        		</div>
+        	</div>
+        	<div class="container3a col-12 col-md-6">
+        		<div class="levels">
+        			<strong><p>Robotics Experience Level</p></strong>
+        			<form>
+        				<div class="experience-level mb-3">
+        					<div class="mb-3">
+        						<input type="radio" id="radioBegin" name="experience-level">
+        						<label for="radioBegin">Beginner</label>
+        					</div>
+        					<div class="mb-3">
+        						<input type="radio" id="radioInterm" name="experience-level">
+        						<label for="radioInterm">Intermediate</label>
+        					</div>
+        					<div class="mb-3">
+        						<input type="radio" id="radioAdv" name="experience-level">
+        						<label for="radioAdv">Advanced</label>
+        					</div>
+        				</div>
+        			</form>
+        		</div>
+        	</div>
+        </div>
+
+        <strong><p>Preferred Robotics Project</p></strong>
+        	<form>
+    			<div class="dropdown">
+        			<button class="btn btn-light dropdown-toggle btn-outline-dark form-control" type="button" data-bs-toggle="dropdown" aria-expanded="false">Choose a project...</button>
+        				<ul class="dropdown-menu">
+        					<li><a class="dropdown-item" href="https://projecthub.arduino.cc/lightthedreams/line-following-robot-34b1d3" target="_blank">Line Following Robot</a></li>
+        					<li><a class="dropdown-item" href="https://projecthub.arduino.cc/aakash11/obstacle-avoiding-robot-8018ae" target="_blank">Obstacle Avoidance Robot</a></li>
+        					<li><a class="dropdown-item" href="https://www.instructables.com/How-to-Make-a-Remote-Control-Car/" target="_blank">Simple Remote-Controlled Car</a></li>
+            				<li><a class="dropdown-item" href="https://www.electronicsforu.com/electronics-projects/hardware-diy/automatic-plant-watering-system" target="_blank">Automated Plant Watering System</a></li>    
+            				<li><a class="dropdown-item" href="https://forum.arduino.cc/t/making-robots-at-home/1133402" target="_blank">Mini Robots Using Arduino</a></li>
+            				<li><a class="dropdown-item" href="https://howtorobot.com/expert-insight/robotic-arms" target="_blank">Robotic Arm</a></li>
+            				<li><a class="dropdown-item" href="https://www.instructables.com/Arduino-Voice-Controlled-Robot/" target="_blank">Voice-Controlled Robot</a></li>    
+            				<li><a class="dropdown-item" href="https://www.instructables.com/A-Simple-and-Very-Easy-Inverted-Pendulum-Balancing/" target="_blank">Self-Balancing Robot (Inverted Pendulum)</a></li>
+            				<li><a class="dropdown-item" href="https://projecthub.arduino.cc/abdelkader_ch/hand-gesture-controlled-robot-3d232f" target="_blank">Gesture-Controlled Robot</a></li>    
+            				<li><a class="dropdown-item" href="https://www.instructables.com/How-to-Build-a-GPS-Guided-Robot/" target="_blank">Robot Car with GPS Navigation</a></li>
+            			</ul>
+            	</div>
+            </form>
+
+		<!-- Statement of Interest -->
+		<form>
+			<div class="textarea mt-3 mb-3">
+				<strong><p> Statement of Interest </p></strong>
+				<textarea id="textarea" name="textarea" rows="4" class="form-control" placeholder="Tell us why you're interested in joining the Robotics Club..." required></textarea>
+			</div>
+  			<button type="submit" class="btn btn-light btn-outline-dark">Submit</button>
+		</form>
+	</div>
+	<div class="container4">
+		<div class="footer">
+			<p> Calvin Garcia | 9-Topaz </p>
+		</div>
+	</div>
+</body>
+</html>
